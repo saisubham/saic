@@ -1,6 +1,6 @@
 package com.sudosai.saic;
 
-public class RuntimeError extends Throwable {
+public class RuntimeError extends RuntimeException {
     final Token token;
 
     public RuntimeError(Token token, String message) {
