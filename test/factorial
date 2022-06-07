@@ -1,0 +1,8 @@
+fun fact(n) {
+  if (n >= 1) return n * fact(n - 1);
+  return 1;
+}
+
+for (var i = 1; i <= 5; i = i + 1) {
+  print fact(i);
+}

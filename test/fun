@@ -1,0 +1,5 @@
+fun hello (name, color) {
+    print name + "'s like " + color + " color.";
+}
+
+hello("John", "blue");
