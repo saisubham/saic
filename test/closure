@@ -1,0 +1,15 @@
+fun makeInc() {
+    var count = 0;
+
+    fun inc() {
+        count = count + 1;
+        print count;
+    }
+
+    return inc;
+}
+
+var increment = makeInc();
+increment();
+increment();
+increment();

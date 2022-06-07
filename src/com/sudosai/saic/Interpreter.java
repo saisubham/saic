@@ -226,7 +226,7 @@ public class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
 
     @Override
     public Void visitFunctionStmt(Stmt.Function stmt) {
-        SaicFunction function = new SaicFunction(stmt);
+        SaicFunction function = new SaicFunction(stmt, environment);
         environment.define(stmt.name.lexeme, function);
         return null;
     }
